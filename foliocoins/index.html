@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cryptofolio</title>
+    <style>
+
+        * {
+            box-sizing:border-box;
+            -webkit-box-sizing:border-box;
+            -moz-box-sizing:border-box;
+
+            font-smoothing: antialiased;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizelegibility;
+
+            outline: 0;
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        *::selection {
+            background: #aaa;
+            color: white;
+        }
+
+        html {
+            font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            font-size: 11pt;
+        }
+
+        @media screen and (min-width: 768px) {
+            html { font-size: 12pt; }
+        }
+
+        @media screen and (min-width: 1280px) {
+            html { font-size: 13pt; }
+        }
+
+        @media screen and (min-width: 1680px) {
+            html { font-size: 16pt; }
+        }
+
+        body, input, select, textarea, p, h1, h2, h3, h4, h5, h6 {
+            font-size: 1rem;
+            font-weight: 400;
+            letter-spacing: 0.025rem;
+            line-height: 1.7;
+        }
+
+        body {
+            color: white;
+            background-color: #222;
+        }
+
+        .money {
+            color: #49fca2;
+        }
+
+
+
+        header {
+            margin: 0 auto;
+            padding: 20% 5%;
+            text-align: center;
+        }
+
+            header div {
+                display: block;
+                border: 2px solid #49fca2;
+                margin: 0 10%;
+                padding: 1.3rem 0;
+                font-size: 1.8rem;
+                letter-spacing: 0.2rem;
+            }
+
+        @media screen and (min-width: 920px) {
+
+            header {
+                width: 80%;
+                padding: 8% 0%;
+            }
+
+                header div {
+                    display: inline-block;
+                    margin: 0;
+                    padding: 1.3rem 10rem;
+                }
+
+        }
+
+
+
+        main {
+            margin: 0 auto 10% auto;
+            padding: 0 5%;
+        }
+
+            main .coin {
+                border-top: 1px dotted #333;
+                padding: 1.5rem 0;
+                font-size: 1.1rem;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                text-align: center;
+            }
+
+                main .symbol {
+                    color: #ccc;
+                }
+
+                main .holding {
+                    color: #333;
+                }
+
+                main .unit-value {
+                    color: #555;
+                }
+
+        @media screen and (min-width: 920px) {
+
+            main {
+                width: 70%;
+                padding: 0;
+            }
+
+                main .coin {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    font-size: 1.3rem;
+                }
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <div class="money">$54,000</div>
+    </header>
+
+    <main>
+
+        <div class="coin">
+            <div class="symbol">BTC</div>
+            <div class="holding">1.10</div>
+            <div class="unit-value">$40,000</div>
+            <div class="holding-value money">$44,000</div>
+        </div>
+
+        <div class="coin">
+            <div class="symbol">ETH</div>
+            <div class="holding">5.00</div>
+            <div class="unit-value">$1,200</div>
+            <div class="holding-value money">$6,000</div>
+        </div>
+
+        <div class="coin">
+            <div class="symbol">WGR</div>
+            <div class="holding">100,000</div>
+            <div class="unit-value">$0.04</div>
+            <div class="holding-value money">$4,000</div>
+        </div>
+
+        <div class="coin">
+            <div class="symbol">SHIT</div>
+            <div class="holding">0.00</div>
+            <div class="unit-value">$1.66</div>
+            <div class="holding-value money">$0</div>
+        </div>
+
+        <div class="coin">
+            <div class="symbol">CRAP</div>
+            <div class="holding">0.00</div>
+            <div class="unit-value">$5.55</div>
+            <div class="holding-value money">$0</div>
+        </div>
+
+        <div class="coin">
+            <div class="symbol">XRP</div>
+            <div class="holding">0.00</div>
+            <div class="unit-value">$0.35</div>
+            <div class="holding-value money">$0</div>
+        </div>
+
+    </main>
+
+</body>
+</html>
+
